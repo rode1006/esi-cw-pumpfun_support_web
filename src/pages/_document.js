@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel='icon' href='./pumpfunlogo.webp' />
+        <link rel='icon' href='./favicon.ico' />
         <Script src="/charting_library/charting_library.js" strategy="beforeInteractive"></Script>
       </Head>
       <body>

@@ -81,9 +81,9 @@ export default function Header() {
           <Link href="/">
             <Image
               className="rounded-full"
-              src="/pumpfunlogo.webp"
-              width={25}
-              height={25}
+              src="/ggww.jpg"
+              width={30}
+              height={30}
               alt=""
             // priority={true}
             />
@@ -214,7 +214,7 @@ function HowItWorksDialog({ isDialogOpen, setIsDialogOpen }) {
     <Transition appear show={isDialogOpen}>
       <Dialog as="div" className={`relative z-30 focus:outline-none `} onClose={() => setIsDialogOpen(false)}>
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-          <div className="flex min-h-full items-center justify-center p-4 bg-black/30">
+          <div className="flex min-h-full items-center justify-center p-4 bg-[#000000cc]">
             <TransitionChild
               enter="ease-out duration-300"
               enterFrom="opacity-0 transform-[scale(95%)]"
@@ -223,41 +223,24 @@ function HowItWorksDialog({ isDialogOpen, setIsDialogOpen }) {
               leaveFrom="opacity-100 transform-[scale(100%)]"
               leaveTo="opacity-0 transform-[scale(95%)]"
             >
-              <DialogPanel className="flex flex-col gap-8 p-10 w-full max-w-xl rounded-lg bg-[#12141659] border border-white backdrop-blur-2xl">
-                <p className='text-[32px] text-bold text-white text-center'>How it works</p>
-                <p className='text-xl text-white text-center'>Pump prevents rugs by making sure that all created tokens are safe. Each coin on pump is a <span className='text-[#FFCC48]'>fair-launch</span> with no presale and <span className='text-[#FF3131]'>no team allocation.</span></p>
-                <div className="flex flex-col gap-6">
-                  <div className="flex flex-col gap-2">
-                    <div className="px-3 py-1 border border-white rounded-lg text-xl text-white w-fit">
-                      Step 01
-                    </div>
-                    <p className="text-xl text-white">Pick a coin that you like</p>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <div className="px-3 py-1 border border-white rounded-lg text-xl text-white w-fit">
-                      Step 02
-                    </div>
-                    <p className="text-xl text-white">Buy the coin on the bonding curve</p>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <div className="px-3 py-1 border border-white rounded-lg text-xl text-white w-fit">
-                      Step 03
-                    </div>
-                    <p className="text-xl text-white">Sell at any time to lock in your profits or losses</p>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <div className="px-3 py-1 border border-white rounded-lg text-xl text-white w-fit">
-                      Step 04
-                    </div>
-                    <p className="text-xl text-white">When enough people buy on the bonding curve it reaches a market cap of $69k</p>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <div className="px-3 py-1 border border-white rounded-lg text-xl text-white w-fit">
-                      Step 05
-                    </div>
-                    <p className="text-xl text-white">$12k of liquidity is then deposited in Raydium and burned</p>
-                  </div>
+              <DialogPanel className="flex flex-col gap-8 p-10 w-full max-w-xl rounded-lg bg-[#1b1d28] border border-white backdrop-blur-2xl">
+                <p className='text-xl font-semibold text-white text-center'>How it works</p>
+                <p className='text-md text-white text-center'>pump ensures that all created tokens are safe to trade through a secure and battle-tested token launching system. each coin on pump is a <span className='text-green-300'>fair-launch</span> with <span className="text-blue-300">no presale</span> and <span className='text-orange-300'>no team allocation.</span></p>
+                <div class="bg-primary text-white p-2 text-center space-y-4">
+                  <div class="text-gray-300">step 1: pick a coin that you like</div>
+                  <div class="text-gray-300">step 2: buy the coin on the bonding curve</div>
+                  <div class="text-gray-300">step 3: sell at any time to lock in your profits or losses</div>
+                  <div class="text-gray-300">step 4: when enough people buy on the bonding curve it reaches a market cap of $100k</div>
+                  <div class="text-gray-300">step 5: $17k of liquidity is then deposited in raydium and burned</div>
                 </div>
+                <div class="text-sm text-center text-gray-100 font-semibold">
+                  <a class="underline" data-sentry-element="Link" data-sentry-source-file="HowItWorks.tsx" href="/docs/privacy-policy">privacy policy</a>
+                  {" | "}
+                  <a class="underline" data-sentry-element="Link" data-sentry-source-file="HowItWorks.tsx" href="/docs/terms-and-conditions">terms of service</a>
+                  {" | "}
+                  <a class="underline" data-sentry-element="Link" data-sentry-source-file="HowItWorks.tsx" href="/docs/fees">fees</a>
+                </div>
+                <p class="text-gray-300 text-sm text-center">by clicking this button you agree to the terms and conditions and certify that you are over 18</p>
                 <button type="button" className="bg-white text-black rounded-xl text-xl font-bold p-3" onClick={() => setIsDialogOpen(false)}>I&apos;m ready to pump</button>
               </DialogPanel>
             </TransitionChild>

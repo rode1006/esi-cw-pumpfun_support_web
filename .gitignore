@@ -19,11 +19,13 @@
 # misc
 .DS_Store
 *.pem
+package-lock.json
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
 
 # local env files
 .env
@@ -35,3 +37,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# gitignore
+.gitignore

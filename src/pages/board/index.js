@@ -90,8 +90,8 @@ export default function BoardPage() {
   return (
     <section className={`z-10 flex flex-col pt-10 sm:pt-4 gap-4 justify-center px-2 pb-20`}>
       <div className='z-[9] flex flex-col gap-8'>
-        <Link href="/create" className='flex mx-auto font-semibold text-2xl text-white'>
-          [start a new coin]
+        <Link href="/create" className='flex p-2 rounded-lg mx-auto font-semibold text-2xl hover:text-gray-300 bg-[#c7c7c728] text-white'>
+          Start a new coin
         </Link>
       </div>
       <div className='z-10 flex flex-col gap-4'>

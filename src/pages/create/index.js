@@ -54,8 +54,8 @@ export default function CreateCoin() {
   return (
     <section className={`flex flex-col gap-8 sm:max-w-[400px] w-full mx-auto pt-10 sm:pt-[80px] px-4 pb-20`}>
       <div className='flex flex-col gap-6 z-10'>
-        <Link href="/" className='flex mx-auto font-semibold text-2xl text-white'>
-          [go back]
+        <Link href="/" className='flex mx-auto font-semibold hover:text-gray-300 bg-[#c7c7c728] rounded-lg p-2 text-2xl text-white'>
+          Go back
         </Link>
         <div className="flex flex-col gap-1 w-full">
           <p className='text-sm font-bold text-white'>Name</p>
@@ -73,7 +73,7 @@ export default function CreateCoin() {
           <p className='text-sm font-bold text-white'>Choose Image</p>
           <div className='relative'>
             <label htmlFor="coinImage" className='absolute right-4 inset-y-1.5'>
-              <div className={`bg-white rounded-md p-2 text-xs cursor-pointer hover:bg-gray-200`}>Choose Image</div>
+              <div className={`bg-[#dddddd] rounded-md p-2 text-xs cursor-pointer hover:bg-gray-200`}>Choose Image</div>
               <input id='coinImage' type='file' className='hidden' accept='image/*' onChange={(e) => {
                 if (e.target.files.length > 0) {
                   const src = URL.createObjectURL(e.target.files[0])
