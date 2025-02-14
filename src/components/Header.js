@@ -75,15 +75,15 @@ export default function Header() {
   }
 
   return (
-    <header className="z-20 flex flex-col gap-2 items-center p-2">
+    <header className="z-20 flex flex-col gap-2 items-center p-4">
       <div className="flex justify-between items-center w-full">
         <div className="flex gap-2 items-center">
           <Link href="/">
             <Image
               className="rounded-full"
-              src="/ggww.jpg"
-              width={30}
-              height={30}
+              src="/favicon.ico"
+              width={50}
+              height={50}
               alt=""
             // priority={true}
             />
@@ -214,7 +214,7 @@ function HowItWorksDialog({ isDialogOpen, setIsDialogOpen }) {
     <Transition appear show={isDialogOpen}>
       <Dialog as="div" className={`relative z-30 focus:outline-none `} onClose={() => setIsDialogOpen(false)}>
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-          <div className="flex min-h-full items-center justify-center p-4 bg-[#000000cc]">
+          <div className="flex min-h-full items-center justify-center p-4 bg-[#00000080]">
             <TransitionChild
               enter="ease-out duration-300"
               enterFrom="opacity-0 transform-[scale(95%)]"
@@ -223,7 +223,7 @@ function HowItWorksDialog({ isDialogOpen, setIsDialogOpen }) {
               leaveFrom="opacity-100 transform-[scale(100%)]"
               leaveTo="opacity-0 transform-[scale(95%)]"
             >
-              <DialogPanel className="flex flex-col gap-8 p-10 w-full max-w-xl rounded-lg bg-[#1b1d28] border border-white backdrop-blur-2xl">
+              <DialogPanel className="flex flex-col gap-8 p-10 w-full max-w-xl rounded-lg bg-[#83838327] border border-white backdrop-blur-2xl">
                 <p className='text-xl font-semibold text-white text-center'>How it works</p>
                 <p className='text-md text-white text-center'>pump ensures that all created tokens are safe to trade through a secure and battle-tested token launching system. each coin on pump is a <span className='text-green-300'>fair-launch</span> with <span className="text-blue-300">no presale</span> and <span className='text-orange-300'>no team allocation.</span></p>
                 <div class="bg-primary text-white p-2 text-center space-y-4">
